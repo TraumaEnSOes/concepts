@@ -1,3 +1,10 @@
+/*
+    Como generar ID automágicos para jerarquías de clases, tales como jerarquías de eventos.
+    El truco está en la función plantila 'AutoId( )'. El compilador generará una nueva instancia por cada tipo pasado como argumento de plantilla.
+    Esto permite declarar los distintos eventos en archivos totalmente distintos, sin problemas de solapamientos de ID, y sin necesidad de
+mantener variables estáticas ni usar ningún otro truco.
+*/
+
 template< typename T > void AutoId( ) { }
 
 struct Event {
